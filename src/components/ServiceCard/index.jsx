@@ -67,4 +67,4 @@ export const ServiceCard = ({ service }) => {
         </div>
       </div>
     );
-  };
+  }
