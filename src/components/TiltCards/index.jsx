@@ -50,7 +50,7 @@ const TiltCard = () => {
       </div>
 
       {/* Content cards */}
-      <div className="relative z-20 flex flex-col gap-24 items-center justify-center mt-20 px-6">
+      <div className="relative z-20 flex flex-col gap-24 items-center justify-center mt-[-90px] md:mt-20 px-6">
         {serviceList.map((service, index) => (
           <ServiceCard key={index} service={service} />
         ))}

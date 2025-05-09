@@ -5,9 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-black text-white overflow-hidden">
       {/* Watermark Text */}
-      <div className="absolute left-1/2 bottom-[100px] -translate-x-1/2 text-[10vw] font-extrabold text-gray-600 opacity-10 z-0 whitespace-nowrap">
-        VIDEO PRODUCTION
-      </div>
+
 
       {/* Top Section */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row gap-10">
@@ -38,7 +36,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-
+        <div className='border-l h-auto border-gray-600'></div>
         {/* Right: Link Columns */}
         <div className="w-full md:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-8 text-sm">
           {/* Quick Links */}
@@ -52,7 +50,9 @@ const Footer = () => {
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
-
+          <div className="absolute left-200 bottom-[50px] -translate-x-1/2 text-[5vw] font-extrabold text-gray-600 opacity-10 z-0 whitespace-nowrap">
+            VIDEO PRODUCTION
+          </div>
           {/* Utility Pages */}
           <div>
             <h3 className="font-semibold text-white mb-4">Utility Pages</h3>
@@ -76,15 +76,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Bottom Divider */}
       <div className="border-t border-gray-800 mt-10" />
 
-      {/* Bottom Copyright */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-6 text-center text-gray-500 text-sm">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-6 text-center  text-gray-500 text-sm">
         Copyright © 2025 Animatory | Designed by TNCFlow | Powered by Webflow
       </div>
+      {/* Bottom Divider */}
 
+      {/* Bottom Copyright */}
+    x
       {/* Scroll to Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}

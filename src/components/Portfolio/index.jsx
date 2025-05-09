@@ -1,52 +1,39 @@
-import React from 'react'
-
+import image from "../../assets/about.png"
 const Portfolio = () => {
+
+
   return (
-    <div>
-      <section class="bg-white py-16">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-      
-      <div class="md:col-span-1">
-        <h2 class="text-4xl font-bold sticky top-20">Portfolio</h2>
+    <section className="relative bg-[#0d0d0d] text-white py-20">
+      {/* Sticky heading - only visible inside this section */}
+      <div className="sticky top-20 z-10 pointer-events-none select-none text-center">
+        <h1 className="text-6xl md:text-[180px] font-bold text-gray-300 opacity-10 whitespace-nowrap">
+          Portfolio
+        </h1>
       </div>
-
-      <div class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        
-        <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
-          <img
-            src="https://via.placeholder.com/400x300"
-            alt="Project 1"
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <p class="text-white text-lg font-semibold">Project 1</p>
+      <div className="container px-6">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-[100px]">
+          <div className="">
+            <img className="w-[433px] h-[635px]" src={image} />
+            <div className="flex gap-2 mt-4 align-middle">
+              <div className="w-2 h-2 rounded-full bg-lime-500"></div>
+              <p className="">Commercial Video</p>
+            </div>
+          </div>
+          <div className="mt-20">
+            <img className="w-[433px] h-[635px]" src={image} />
+            <div className="flex gap-2 mt-4 align-middle">
+              <div className="w-2 h-2 rounded-full bg-lime-500"></div>
+              <p className="">Corporate Video</p>
+            </div>
           </div>
         </div>
-
-        <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer">
-          <img
-            src="https://via.placeholder.com/400x300"
-            alt="Project 2"
-            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-          />
-          <div
-            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <p class="text-white text-lg font-semibold">Project 2</p>
-          </div>
+        <div className="">
+          <img src="" />
         </div>
-
-
       </div>
-    </div>
-  </div>
-</section>
 
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Portfolio
+export default Portfolio;
